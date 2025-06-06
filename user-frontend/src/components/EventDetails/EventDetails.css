@@ -1,0 +1,203 @@
+.event-details-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  border-radius: 20px;
+  color: #f1f5f9;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.event-details-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #a855f7, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event-details-container p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #cbd5e1;
+}
+
+.event-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 30px 0;
+  border: 2px solid rgba(108, 43, 217, 0.2);
+  box-shadow: 0 8px 20px rgba(108, 43, 217, 0.3);
+}
+
+.description, .event-info, .booking-info, .reviews {
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(108, 43, 217, 0.2);
+}
+
+.description h2, .event-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #818cf8, #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: linear-gradient(135deg, #6C2BD9, #8B5FE6);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(108, 43, 217, 0.3);
+}
+
+.booking-info label {
+  display: block;
+  margin: 20px 0 10px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.booking-info select {
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+  border: 1px solid #a855f7;
+  font-size: 14px;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.book-now-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #059669, #10b981);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+}
+
+.secured {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.reviews {
+  text-align: center;
+  font-size: 18px;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .event-details-container {
+    padding: 15px;
+  }
+
+  .event-details-container h1 {
+    font-size: 30px;
+  }
+
+  .description h2, .event-info h2 {
+    font-size: 22px;
+  }
+
+  .book-now-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-details-container {
+    margin: 20px 10px;
+    padding: 15px 12px;
+    border-radius: 15px;
+  }
+
+  .event-details-container h1 {
+    font-size: 24px;
+  }
+
+  .event-details-container p {
+    font-size: 14px;
+    margin: 6px 0;
+  }
+
+  .event-image {
+    max-height: 250px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+
+  .description, .event-info, .booking-info, .reviews {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .description h2, .event-info h2 {
+    font-size: 20px;
+  }
+
+  .tags {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tag {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .booking-info label {
+    margin: 15px 0 8px;
+  }
+
+  .booking-info select {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .book-now-btn {
+    font-size: 14px;
+    padding: 12px 0;
+    border-radius: 10px;
+  }
+
+  .secured {
+    font-size: 12px;
+  }
+
+  .reviews {
+    font-size: 16px;
+  }
+}

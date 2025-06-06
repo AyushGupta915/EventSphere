@@ -1,0 +1,125 @@
+.my-bookings {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  color: #f1f5f9;
+}
+
+.my-bookings h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #a855f7, #c084fc);
+  background-clip: text;
+  color: transparent;
+}
+
+.booking-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.booking-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(108, 43, 217, 0.1);
+  transition: all 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(108, 43, 217, 0.2);
+}
+
+.booking-card h2 {
+  font-size: 24px;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #e2e8f0;
+}
+
+.view-ticket-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6C2BD9, #8B5FE6);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-ticket-btn:hover {
+  background: linear-gradient(135deg, #a855f7, #c084fc);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .my-bookings {
+    padding: 40px 15px;
+  }
+
+  .my-bookings h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .booking-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .booking-card h2 {
+    font-size: 20px;
+  }
+
+  .booking-card p {
+    font-size: 14px;
+  }
+
+  .view-ticket-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-list {
+    grid-template-columns: 1fr;
+  }
+
+  .my-bookings h1 {
+    font-size: 24px;
+  }
+
+  .booking-card {
+    padding: 20px;
+  }
+
+  .booking-card h2 {
+    font-size: 18px;
+  }
+
+  .booking-card p {
+    font-size: 13px;
+  }
+
+  .view-ticket-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
