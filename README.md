@@ -128,9 +128,6 @@ EventSphere/
 
 ## 📸 Screenshots
 
-Below are all **14 screenshots**, displayed in rows of 2.
-
-```md
 <p align="center">
   <img src="./Images/1.png" width="350"/>
   <img src="./Images/2.png" width="350"/>
@@ -165,9 +162,6 @@ Below are all **14 screenshots**, displayed in rows of 2.
   <img src="./Images/13.png" width="350"/>
   <img src="./Images/14.png" width="350"/>
 </p>
-```
-
----
 
 ## 📝 Assumptions
 
